@@ -1,0 +1,50 @@
+[
+  {
+    "id": "faq-01",
+    "query": "本学期什么时候选课",
+    "type": "FAQ",
+    "expectContains": "选课"
+  },
+  {
+    "id": "faq-02",
+    "query": "挂科了怎么办",
+    "type": "FAQ",
+    "expectContains": "重修"
+  },
+  {
+    "id": "faq-03",
+    "query": "GPA怎么计算",
+    "type": "FAQ",
+    "expectContains": "绩点"
+  },
+  {
+    "id": "faq-04",
+    "query": "校园卡丢失了怎么办",
+    "type": "FAQ",
+    "expectContains": "挂失"
+  },
+  {
+    "id": "faq-05",
+    "query": "如何申请转专业",
+    "type": "FAQ",
+    "expectContains": "转专业"
+  },
+  {
+    "id": "rag-01",
+    "query": "奖学金评定标准是什么",
+    "type": "RAG",
+    "expectDocKeyword": "奖学金"
+  },
+  {
+    "id": "rag-02",
+    "query": "学校相关政策规定有哪些",
+    "type": "RAG",
+    "expectDocKeyword": "政策"
+  },
+  {
+    "id": "rag-03",
+    "query": "毕业论文答辩流程",
+    "type": "RAG",
+    "expectDocKeyword": "答辩"
+  }
+]

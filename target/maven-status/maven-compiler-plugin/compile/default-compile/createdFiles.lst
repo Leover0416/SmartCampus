@@ -1,0 +1,6 @@
+com/simon/campus/model/vo/FaqSuggestionVO$FaqSuggestionVOBuilder.class
+com/simon/campus/mapper/FaqSuggestionMapper.class
+com/simon/campus/config/FaqEmbeddingInitializer.class
+com/simon/campus/service/admin/FaqSuggestionService.class
+com/simon/campus/service/rag/FaqEmbeddingService.class
+com/simon/campus/model/vo/FaqSuggestionVO.class

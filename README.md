@@ -1,6 +1,6 @@
 # SmartCampus 校园智能问答系统
 
-基于 **RAG + Agent** 的高校政策/教务智能助手，毕设交付项目。
+基于 **RAG + Agent** 的高校政策/教务智能助手。
 
 **技术栈**：Java 17 · Spring Boot 3.3 · Vue 3 · Milvus 2.4 · MySQL 8 · Redis 7 · MinIO · DashScope (通义千问)
 

@@ -1,0 +1,22 @@
+[
+  {"id": "faq-01", "type": "FAQ", "query": "本学期什么时候选课？", "expectContains": "选课"},
+  {"id": "faq-02", "type": "FAQ", "query": "挂科了怎么办？", "expectContains": "重修"},
+  {"id": "faq-03", "type": "FAQ", "query": "GPA怎么计算？", "expectContains": "绩点"},
+  {"id": "faq-04", "type": "FAQ", "query": "校园卡丢失了怎么办？", "expectContains": "挂失"},
+  {"id": "faq-05", "type": "FAQ", "query": "如何申请转专业？", "expectContains": "转专业"},
+  {"id": "faq-06", "type": "FAQ", "query": "奖学金评定标准是什么？", "expectContains": "奖学金"},
+  {"id": "faq-07", "type": "FAQ", "query": "毕业论文答辩流程是什么？", "expectContains": "答辩"},
+  {"id": "faq-08", "type": "FAQ", "query": "图书馆借书规则是什么？", "expectContains": "借"},
+  {"id": "faq-09", "type": "FAQ", "query": "如何查询期末成绩？", "expectContains": "成绩"},
+  {"id": "faq-10", "type": "FAQ", "query": "宿舍如何报修？", "expectContains": "报修"},
+  {"id": "rag-01", "type": "RAG", "query": "国家奖学金和国家励志奖学金有什么区别？", "expectDocKeyword": "奖学金"},
+  {"id": "rag-02", "type": "RAG", "query": "一等奖学金的评定比例是多少？", "expectDocKeyword": "奖学金"},
+  {"id": "rag-03", "type": "RAG", "query": "挂科了还能评奖学金吗？", "expectDocKeyword": "奖学金"},
+  {"id": "rag-04", "type": "RAG", "query": "转专业对绩点有什么要求？", "expectDocKeyword": "转专业"},
+  {"id": "rag-05", "type": "RAG", "query": "计算机学院转专业有哪些限制？", "expectDocKeyword": "转专业"},
+  {"id": "rag-06", "type": "RAG", "query": "旷课多少次会被取消考试资格？", "expectDocKeyword": "旷课"},
+  {"id": "rag-07", "type": "RAG", "query": "学校有多少年历史？办学特色是什么？", "expectDocKeyword": "清北"},
+  {"id": "rag-08", "type": "RAG", "query": "学生申诉学籍处理的流程是怎样的？", "expectDocKeyword": "申诉"},
+  {"id": "rag-09", "type": "RAG", "query": "优秀学生奖学金和单项奖学金可以同时获得吗？", "expectDocKeyword": "奖学金"},
+  {"id": "rag-10", "type": "RAG", "query": "转专业申请一般什么时候提交？", "expectDocKeyword": "转专业"}
+]

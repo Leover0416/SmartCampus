@@ -1,0 +1,18 @@
+# Docker 环境配置覆盖 — 将所有 localhost 替换为 Docker service name
+spring:
+  datasource:
+    url: jdbc:mysql://mysql:3306/campus?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+  data:
+    redis:
+      host: redis
+
+milvus:
+  host: milvus
+
+minio:
+  endpoint: http://minio:9000
+
+logging:
+  level:
+    com.simon.campus: INFO
+    org.springframework.web.socket: WARN

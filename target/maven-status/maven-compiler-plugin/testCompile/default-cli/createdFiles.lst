@@ -1,0 +1,8 @@
+com\simon\campus\service\agent\IntentRouterRuntimeConfigTest.class
+com\simon\campus\service\rag\RagGeneratorRuntimeConfigTest.class
+com\simon\campus\service\rag\MultiRouteRecallerRuntimeConfigTest.class
+com\simon\campus\service\tool\ToolCallerConfigKeysTest.class
+com\simon\campus\service\rag\RerankerRuntimeConfigTest.class
+com\simon\campus\service\tool\ToolCallerPromptConfigTest.class
+com\simon\campus\service\rag\FaqMatcherRuntimeConfigTest.class
+com\simon\campus\service\admin\SystemConfigServiceDefaultsTest.class

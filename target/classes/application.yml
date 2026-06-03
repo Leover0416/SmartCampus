@@ -1,0 +1,114 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+
+spring:
+  application:
+    name: campus
+  datasource:
+    url: jdbc:mysql://localhost:3306/campus?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: lz20010416
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 30000
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: campus123
+      lettuce:
+        pool:
+          max-active: 16
+          max-idle: 8
+          min-idle: 2
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+    default-property-inclusion: non_null
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.simon.campus.model.entity
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
+jwt:
+  secret: smartcampus-secret-key-for-jwt-hs256-authentication-2026-must-be-at-least-32-bytes
+  expiration: 604800000  # 7 days
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+# Milvus（Phase 2+）
+milvus:
+  host: localhost
+  port: 19530
+  collection-name: campus_child_chunks
+
+# MinIO（Phase 2+）
+minio:
+  endpoint: http://localhost:9000
+  access-key: minioadmin
+  secret-key: campus123
+  bucket-name: campus-docs
+  local-data-dir: ${MINIO_LOCAL_DATA_DIR:}
+
+# DashScope 通义千问（Phase 3+）
+dashscope:
+  api-key: ${BAILIAN_API_KEY:your-dashscope-api-key-here}
+  base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+
+models:
+  intent-router:
+    model: qwen-turbo
+    temperature: 0.1
+    max-tokens: 256
+  query-rewriter:
+    model: qwen-plus
+    temperature: 0.3
+    max-tokens: 512
+  rag-generator:
+    model: qwen-max
+    temperature: 0.2
+    max-tokens: 2048
+  tool-caller:
+    model: qwen-plus
+    temperature: 0.1
+    max-tokens: 1024
+  chitchat:
+    model: qwen-turbo
+    temperature: 0.7
+    max-tokens: 1024
+  vision-parser:
+    model: qwen3-vl-flash
+    temperature: 0.1
+    max-tokens: 2048
+
+knowledge:
+  vision:
+    pdf-image-enabled: true
+    pdf-render-dpi: 144
+    pdf-max-pages: 30
